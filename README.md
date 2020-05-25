@@ -1,113 +1,30 @@
-# Strapi Starter React Blog
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
 
-React starter for creating a blog with Strapi.
+## Getting Started
 
-This starter allows you to try Strapi with React with the example of a simple blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. Do not hesitate to add new features etc ...
-
-You may want to know how to develop such a starter by your own! This starter is actually the result of this [tutorial](https://strapi.io/blog/build-a-blog-with-react-strapi-and-apollo)
-
-![screenshot image](/screenshot.png)
-
-### Deploy the backend
-
-To deploy this Strapi instance you'll need:
-
-- [A Heroku account](https://signup.heroku.com/) for free
-- [A Cloudinary account for saving images](https://cloudinary.com/users/register/free) for free
-
-Once you have created these accounts you can deploy your instance by clicking on this button
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/strapi/strapi-starter-react-blog)
-
-### Deploy the frontend
-
-**Netlify**
-
-To deploy this Strapi instance you'll need:
-
-- [A Netlify account](https://app.netlify.com/signup) for free
-
-Once you have created your account you can deploy your instance by clicking on this button.
-
-[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/strapi/strapi-starter-react-blog)
-
-- Select a repository name and fill the API_URL with your Strapi instance on Heroku (eg: https://your-app.herokuapp.com) without the trailing slash
-
-### Features
-
-- 2 Content types: Article, Category
-- Permissions set to `true` for article and category
-- 2 Created articles
-- 3 Created categories
-- Apollo integration (GraphQL) for fetching data from strapi
-- Responsive design using UIkit
-
-### Pages
-
-- "/" display every articles
-- "/article/:id" display one article
-- "/category/:id" display articles depending on the category
-
-### Getting started
-
-**Clone the repository and install dependencies**
+First, run the development server:
 
 ```bash
-git clone https://github.com/strapi/strapi-starter-react-blog.git
-cd strapi-starter-react-blog
-
-# Using yarn
-yarn setup:yarn
-
-# Using npm
-npm run setup:npm
+npm run dev
+# or
+yarn dev
 ```
 
-### Scaffold your project
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-This command will launch both of your backend and frontend servers and do a data migration in your backend server
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-```bash
-# Using yarn
-yarn build:yarn
-yarn develop:yarn
+## Learn More
 
-# Using npm
-npm run build:npm
-npm run develop:npm
-```
+To learn more about Next.js, take a look at the following resources:
 
-Alternatively, you can still start your servers separately:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Start the backend server
+You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
 
-```bash
-cd backend
+## Deploy on Vercel
 
-# Using yarn
-yarn build
-yarn seed
-yarn develop
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-# Using npm
-npm run build
-npm run seed
-npm run develop
-```
-
-### Start the frontend server
-
-```bash
-cd frontend
-
-# Using yarn
-yarn develop
-
-# Using npm
-npm run develop
-```
-
-React server is running here => [http://localhost:3000](http://localhost:3000)
-Strapi server is running here => [http://localhost:1337](http://localhost:1337)
-
-Enjoy this starter
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

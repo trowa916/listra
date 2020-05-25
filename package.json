@@ -1,22 +1,29 @@
 {
+  "name": "frontend",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "setup:npm": "npm install && npm-run-all -p setup:npm:*",
-    "setup:npm:backend": "cd backend && npm install",
-    "setup:npm:frontend": "cd frontend && npm install",
-    "develop:npm": "npm-run-all -p develop:npm:*",
-    "develop:npm:backend": "cd backend && npm run develop",
-    "develop:npm:frontend": "cd frontend && npm run develop",
-    "setup:yarn": "yarn && npm-run-all -p setup:yarn:*",
-    "setup:yarn:backend": "cd backend && yarn",
-    "setup:yarn:frontend": "cd frontend && yarn",
-    "develop:yarn": "npm-run-all -p develop:yarn:*",
-    "develop:yarn:backend": "cd backend && yarn develop",
-    "develop:yarn:frontend": "cd frontend && yarn develop",
-    "build:npm": "cd backend && npm run build",
-    "build:yarn": "cd backend && yarn build"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "devDependencies": {
-    "npm-run-all": "^4.1.5"
-  },
-  "license": "MIT"
+  "dependencies": {
+    "@apollo/react-hooks": "^3.1.5",
+    "@zeit/next-css": "^1.0.1",
+    "apollo-cache-inmemory": "^1.6.6",
+    "apollo-client": "^2.6.10",
+    "apollo-link-http": "^1.5.17",
+    "baseui": "^9.78.0",
+    "dotenv": "^8.2.0",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
+    "isomorphic-unfetch": "^3.0.0",
+    "next": "9.4.2",
+    "next-fonts": "^1.1.0",
+    "next-with-apollo": "^5.0.1",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "styletron-engine-atomic": "^1.4.6",
+    "styletron-react": "^5.2.7"
+  }
 }
