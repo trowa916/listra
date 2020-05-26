@@ -9,7 +9,7 @@ const App = ({ Component, pageProps, apollo }) => {
   return (
     <ApolloProvider client={apollo}>
       <Head>
-        <title>Listra</title>
+        <title>Listra Test</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <link
           rel="stylesheet"
