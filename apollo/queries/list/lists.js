@@ -1,17 +1,18 @@
 import gql from "graphql-tag";
 
 const LISTS_QUERY = gql`
-  query Lists {
+    query Lists {
     lists {
       id
       title
-      category {
+      categories {
         id
         name
       }
-      image {
+      images {
         url
       }
+      published_date
     }
   }
 `;
