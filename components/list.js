@@ -1,18 +1,17 @@
+import React from "react";
 import { useRouter } from "next/router";
-import Query from "../components/query";
-import ReactMarkdown from "react-markdown";
-import Moment from "react-moment";
-import LIST_QUERY from "../apollo/queries/lists/list";
+import Query from "./query";
+import LIST_QUERY from "../apollo/queries/list/lists";
 
 const List = () => {
   const router = useRouter();
   return (
-    <Query query={ARTICLE_QUERY} id={router.query.id}>
-      {({ data: { article } }) => {
+    <Query query={LIST_QUERY} id={router.query.id}>
+      {({ data: { list } }) => {
         const imageUrl =
           process.env.NODE_ENV !== "development"
-            ? article.image.url
-            : process.env.API_URL + article.image.url;
+            ? list.image.url
+            : process.env.API_URL + list.image.url;
         return (
           <div>
             <div
@@ -22,14 +21,13 @@ const List = () => {
               data-srcset={imageUrl}
               data-uk-img
             >
-              <h1>{article.title}</h1>
+              <h1>{list.title}</h1>
             </div>
 
             <div className="uk-section">
               <div className="uk-container uk-container-small">
-                <ReactMarkdown source={article.content} />
                 <p>
-                  <Moment format="MMM Do YYYY">{article.published_at}</Moment>
+                  {list.published_date}
                 </p>
               </div>
             </div>
